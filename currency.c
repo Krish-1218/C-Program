@@ -4,6 +4,7 @@ int main(){
     int choice1,choice2,repeat;
     float input,result;
 
+    menu:
     printf("\n 1-Rupees \n 2-Dollar \n 3-Euro");
     printf("\n Enter your currency : ");
     scanf("%d",&choice1);
@@ -113,6 +114,13 @@ int main(){
             goto euro;
         }
         
+    }
+
+    printf("\n You want to see menu press 2 : ");
+    scanf("%d",&repeat);
+    if (repeat==2)
+    {
+        goto menu;
     }
     return 0;
    
