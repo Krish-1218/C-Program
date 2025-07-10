@@ -41,13 +41,13 @@ int main(){
     gst=bill*0.06;
     Total_Bill=bill+gst;
 
-    printf("\n\t--------------------------------------");
-     printf("\n\t Consumer Number \t:\t %d",cons_num);
-     printf("\n\t Consumer Name \t\t:\t %s",cons_name);
-     printf("\n\t Unit \t\t\t:\t %f",unit);
-     printf("\n\t Bill \t\t\t:\t %f",bill);
-     printf("\n\t GST \t\t\t:\t %f",gst);
-     printf("\n\t Total Bill \t\t:\t %f",Total_Bill);
+    printf("\n\t---------------------------------------");
+    printf("\n\t Consumer Number \t:\t %d",cons_num);
+    printf("\n\t Consumer Name \t\t:\t %s",cons_name);
+    printf("\n\t Unit \t\t\t:\t %f",unit);
+    printf("\n\t Bill \t\t\t:\t %f",bill);
+    printf("\n\t GST \t\t\t:\t %f",gst);
+    printf("\n\t Total Bill \t\t:\t %f",Total_Bill);
 
     
 }
