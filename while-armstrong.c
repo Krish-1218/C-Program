@@ -1,34 +1,41 @@
 #include <stdio.h>
-#include <math.h>
 int main()
 {
 
-    int num, count = 0, a, og;
+    int num, count = 0, temp, a, sum=0,power=1;
 
     printf("Enter a Number : ");
     scanf("%d", &num);
 
-    og = a = num;
+    temp = num;
 
-    while (num != 0)
+    while (num > 0)//count
     {
         count++;
         num = num / 10;
     }
 
-    while (a != 0)
+    num = temp;
+    while (num > 0)//fetch digit
     {
-        int digit = a % 10;
-        num +=round(pow(digit, count));
-        a = a / 10;
+        int digit = num % 10;
+        a = 1;
+        power = 1;
+        while (a <= count) //power calculation
+        {
+            power = power * digit;
+            a++;
+        }
+        sum = sum + power;
+        num = num / 10;
     }
-
-    if (og == num)
+    if (temp== sum)
     {
-        printf("%d is Armstrong", og);
+        printf("%d is Armstrong", temp);
     }
     else
     {
-        printf("%d is Not Armstrong", og);
+        printf("%d is Not Armstrong", temp);
     }
+   
 }
