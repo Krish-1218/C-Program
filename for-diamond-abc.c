@@ -8,17 +8,17 @@ int main(){
         {
             printf(" ");
         }
-        num='a';
+        char ch='a';
         for (int c=1; c<=r*2-1; c++)
         {
-            if (c<=r*2/2)
+            if (c<r)
             {
-                printf("%c",num);
-                num++;
+                printf("%c",ch);
+                ch++;
             }
             else{
-                printf("%c",num);
-                num--;
+                printf("%c",ch);
+                ch--;
             }
             
         }
@@ -32,10 +32,18 @@ int main(){
         {
             printf(" ");
         }
-           num='a';
+         char ch='a';
         for (int c=1; c<=r*2-1; c++)
         {
-            printf("%c",num++);
+          if (c<r)
+            {
+                printf("%c",ch);
+                ch++;
+            }
+            else{
+                printf("%c",ch);
+                ch--;
+            }
         }
         
         printf("\n");
