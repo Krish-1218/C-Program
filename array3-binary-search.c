@@ -1,5 +1,3 @@
-//binary search -divide and con(means it divide first and find the midpoint for finding key )
-//sorted
 #include<stdio.h>
 int main(){
 
@@ -50,3 +48,6 @@ int main(){
     
     
 }
+
+//binary search -divide and con(means it divide first and find the midpoint for finding key )
+//sorted
