@@ -1,17 +1,24 @@
 #include<stdio.h>
-#include<string.h>
 int main(){
 
-    char name[]="hello";
-    printf("%s\n",name);
-    name[0]='w';
-    printf("%s\n",name);
+  printf("Enter Your Name :");
+  char name[20];
+  scanf("%s",name);
 
-    int length;
-     for ( length = 0; name[length]!='\0'; length++);
-    
-    for (int i = length-1; i>=0; i-- )
-    {
-        printf("%c",name[i]);
-    }
+  int length;
+  for(length=0;name[length]!='\0';length++);
+
+  printf("Original name:%s",name);
+  int frist=0,last=length-1;
+
+  while(frist<last){
+    char temp=name [frist];
+    name [frist]=name[last];
+    name [last]=temp;
+    frist++;
+    last--;
+  }
+    printf(" revers name:%s",name);
+  
+    return 0;
 }
