@@ -27,5 +27,4 @@ int main(){
         printf("%c : %d\n",str[i],count);
     }
     
-    
 }
