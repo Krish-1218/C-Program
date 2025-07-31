@@ -26,7 +26,5 @@ int main(){
     first++;
     last--;
    }
-
    printf(flag==1?"it's a pallindrome":"it's not a pallindrome");
-   
 }
