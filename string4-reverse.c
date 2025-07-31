@@ -1,8 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 int main(){
-
-    
+  
     printf("Enter Name: ");
     char name[20];
     scanf("%s",name);
