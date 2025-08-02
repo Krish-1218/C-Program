@@ -1,18 +1,18 @@
+
 #include<stdio.h>
+#include<string.h>
+
 int main(){
 
-    for (int r=1; r<=5; r++)
-    {
-        for (int s=1; s<=r; s++)
-        {
-            printf(" ");
-        }
+    char name[20];
+    fgets(name,sizeof(name),stdin);
+
+    int i;
+    for (i=0; name[i]!='\0';i++){
+        if (name[i]=='\n');
+         printf("%c ",name[i]);      
         
-        for (int j=5; j>=r; j--)
-        {
-            printf("* ");
-        }
-        printf("\n");
     }
+    
     
 }
