@@ -9,7 +9,6 @@ void sortStrings(char str[]) {
         for (int j = 0; j < len-1; j++)
         {
             if (str[j] > str[j + 1]) {
-                // Swap characters
                 char temp = str[j];
                 str[j] = str[j + 1];
                 str[j + 1] = temp;
